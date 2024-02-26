@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 import { getArgs } from './helpers/args.js';
+import { printSuccess, printHelp } from './services/log.service.js';
+
 const initCLI = () => {
     const args = getArgs(process.argv);
-    console.log(args);
     if (args.h) {
-        // help
+        printHelp();
     }
 
     if (args.t) {
@@ -16,6 +17,7 @@ const initCLI = () => {
     }
 
     // print weather
+
 };
 
 initCLI();
