@@ -2,7 +2,11 @@
   "name": "weazy",
   "version": "1.0.0",
   "description": "A lightweight CLI utility for accessing weather information conveniently from the command line",
-  "main": "index.js",
+  "main": "app.js",
+  "bin": {
+    "weazy": "app.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
