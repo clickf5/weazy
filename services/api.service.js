@@ -13,8 +13,8 @@ const getWeather = async (city) => {
             q: city,
             appid: token,
             lang: 'ru',
-            units: 'metric',
-        },
+            units: 'metric'
+        }
     });
 
     return data;

@@ -6,7 +6,7 @@ const filePath = join(homedir(), 'weazy-data.json');
 
 const KEYS = {
     token: 'token',
-    city: 'city',
+    city: 'city'
 };
 
 const isExist = async (path) => {
