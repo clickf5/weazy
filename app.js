@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { getArgs } from './helpers/args';
+import { getArgs } from './helpers/args.js';
 import {
     printHelp, printSuccess, printError, printWeather,
-} from './services/log.service';
-import { saveKeyValue, KEYS, getKeyValue } from './services/storage.service';
-import { getWeather } from './services/api.service';
+} from './services/log.service.js';
+import { saveKeyValue, KEYS, getKeyValue } from './services/storage.service.js';
+import { getWeather } from './services/api.service.js';
 
 const saveToken = async (token) => {
     if (!token.length) {

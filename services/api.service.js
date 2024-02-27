@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { getKeyValue, KEYS } from './storage.service';
+import { getKeyValue, KEYS } from './storage.service.js';
 
 const getWeather = async (city) => {
     const token = process.env.TOKEN ?? await getKeyValue(KEYS.token);
