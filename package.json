@@ -1,6 +1,6 @@
 {
   "name": "weazy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple command-line utility designed to fetch the current weather using the OpenWeatherMap service. It allows conveniently fetching weather information for a chosen city",
   "main": "app.js",
   "bin": {
