@@ -1,70 +1,70 @@
 # Weazy
 
-Weazy - это простая консольная утилита, разработанная для получения текущей погоды с помощью сервиса OpenWeatherMap. Позволяет удобно получать информацию о погоде в выбранном городе.
+Weazy is a simple command-line utility designed to fetch the current weather using the OpenWeatherMap service. It allows conveniently fetching weather information for a chosen city.
 
-## Использование
+## Usage
 
-### Установка
+### Install
 
-1. Установите пакет глобально:
+1. Install package globally:
 
 ```bash
 npm i -g weazy
 ```
 
-### Запуск
+### Running
 
-Запустите утилиту с помощью следующей команды:
+Run the utility using the following command:
 
 ```bash
 weazy [OPTIONS]
 ```
 
-### Опции
+### Options
 
-- `-c <city>`: Установить город по умолчанию.
-- `-t <API_KEY>`: Установить API ключ OpenWeatherMap.
-- `-h`: Получить справку
+- `-c <city>`: Set default city.
+- `-t <API_KEY>`: Set OpenWeatherMap API key.
+- `-h`: Get help
 
-### Примеры использования
+### Examples
 
 ```bash
-# Установить город 
+# Set dafault city
 weazy -c "Some city"
 
-# Установить token
+# Set token
 weazy -t "Some token"
 
-# Получить текущую погоду в заданном по умолчанию городе
+# Get the current weather in the default city
 weazy
 ```
 
-## Переменные окружения
+## Environment Variables
 
-Вы также можете использовать переменные окружения для установки города и API ключа OpenWeatherMap:
+You can also use environment variables to set the default city and OpenWeatherMap API key:
 
-- `CITY`: Установить город по умолчанию.
-- `TOKEN`: Установить API ключ OpenWeatherMap.
+- `CITY`: Set default city.
+- `TOKEN`: Set OpenWeatherMap API key.
 
-Пример:
+Example:
 
 ```bash
-# Получить текущую погоду в указанном городе
+# Get the current weather in a specified city
 CITY="Moscow" weazy
 
-# Получить текущую погоду в заданном по умолчанию городе используя указанный token
+# Get the current weather in the default city using the specified token
 TOKEN="your_openweathermap_api_key" weazy
 ```
 
-## Замечания
+## Notes
 
-- Если не указан город или API ключ, утилита попросить их указать
-- Для получения API ключа OpenWeatherMap зарегистрируйтесь на их [сайте](https://openweathermap.org/) и получите ключ в личном кабинете.
+- If the city or API key is not specified, the utility will ask you to specify them.
+- To obtain an OpenWeatherMap API key, register on their [website](https://openweathermap.org/) and get the key from your account.
 
-## Лицензия
+## LICENSE
 
-Этот проект лицензирован под MIT License. См. [LICENSE](LICENSE) для дополнительной информации.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for additional information.
 
 --- 
 
-Автор: Евгений Панин
+Author: Eugene Panin
