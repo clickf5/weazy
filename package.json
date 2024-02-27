@@ -1,7 +1,7 @@
 {
   "name": "weazy",
   "version": "1.0.0",
-  "description": "A lightweight CLI utility for accessing weather information conveniently from the command line",
+  "description": "Simple command-line utility designed to fetch the current weather using the OpenWeatherMap service. It allows conveniently fetching weather information for a chosen city",
   "main": "app.js",
   "bin": {
     "weazy": "app.js"
@@ -12,8 +12,14 @@
   },
   "keywords": [
     "cli",
-    "weather"
+    "weather",
+    "OpenWeatherMap",
+    "open"
   ],
+  "bugs": {
+    "email": "paninhome@gmail.com",
+    "url": "https://github.com/clickf5/weazy/issues"
+  },
   "author": "Eugene Panin",
   "license": "MIT",
   "repository": {
