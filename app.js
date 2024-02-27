@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-import { getArgs } from './helpers/args.js';
-import {printHelp, printSuccess, printError, printWeather} from './services/log.service.js';
-import {saveKeyValue, KEYS, getKeyValue} from './services/storage.service.js';
-import {getWeather} from "./services/api.service.js";
-import dedent from "dedent-js";
+import { getArgs } from './helpers/args';
+import {
+    printHelp, printSuccess, printError, printWeather,
+} from './services/log.service';
+import { saveKeyValue, KEYS, getKeyValue } from './services/storage.service';
+import { getWeather } from './services/api.service';
 
 const saveToken = async (token) => {
     if (!token.length) {
@@ -12,11 +13,11 @@ const saveToken = async (token) => {
     }
     try {
         await saveKeyValue(KEYS.token, token);
-        printSuccess('Токен сохранен')
+        printSuccess('Токен сохранен');
     } catch (e) {
         printError(e.message);
     }
-}
+};
 
 const saveCity = async (city) => {
     if (!city.length) {
@@ -30,7 +31,7 @@ const saveCity = async (city) => {
     } catch (e) {
         printError(e.message);
     }
-}
+};
 
 const getForcast = async () => {
     try {
@@ -51,8 +52,7 @@ const getForcast = async () => {
             printError(e.message);
         }
     }
-
-}
+};
 
 const initCLI = () => {
     const args = getArgs(process.argv);

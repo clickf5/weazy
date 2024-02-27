@@ -16,7 +16,7 @@ const isExist = async (path) => {
     } catch (e) {
         return false;
     }
-}
+};
 const saveKeyValue = async (key, value) => {
     let data = {};
 
@@ -37,6 +37,6 @@ const getKeyValue = async (key) => {
     }
 
     return undefined;
-}
+};
 
 export { saveKeyValue, getKeyValue, KEYS };
